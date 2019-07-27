@@ -113,11 +113,11 @@ header nav {
     float: left;
     margin-left: 20px; }
   header nav span {
-    color: #3f863f;
+    color: #51b105;
     margin-left: 20px; }
 
 #lead-banner {
-  max-height: 440px;
+  max-height: 450px;
   overflow: hidden;
   position: relative;
   font-family: "Open Sans", sans-serif; }
@@ -137,7 +137,7 @@ header nav {
     font-size: 28px;
     max-width: 570px;
     margin-top: 10px;
-    line-height: 1.5em;
+    line-height: 1.4em;
     font-weight: 200;
     font-family: "Barlow Semi Condensed", sans-serif; }
   #lead-banner a {
@@ -162,7 +162,115 @@ header nav {
     text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 50px;
     -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
     font-weight: 600; }
+
+section {
+  margin: 40px 0 60px;
+  font-family: "Barlow Semi Condensed", sans-serif; }
+  section ul {
+    list-style-type: none; }
+
+section:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+#points-of-sale h2 {
+  height: 0;
+  text-indent: -10000px; }
+
+#points-of-sale li {
+  float: left;
+  width: 30%; }
+
+#points-of-sale li:nth-child(2) {
+  margin: 0 5%; }
+
+#points-of-sale li h3 {
+  text-align: center;
+  color: #8c8b8b;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 20px 0; }
+
+#points-of-sale li img {
+  width: 100%; }
+
+#points-of-sale p {
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+  font-size: 14px;
+  color: #8c8b8b;
+  line-height: 1.4em; }
+
+#clients {
+  border-top: 1px solid #ccc;
+  padding-top: 30px; }
+  #clients h2 {
+    background-color: #51b105;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    width: 250px;
+    text-transform: uppercase;
+    position: relative;
+    top: -45px;
+    margin: 0 auto;
+    border-left: 16px solid #fff;
+    border-right: 16px solid #fff;
+    letter-spacing: 1px; }
+  #clients img {
+    float: left;
+    width: 30%; }
+  #clients blockquote {
+    float: right;
+    width: 66%;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.6em;
+    color: #8c8b8b;
+    padding-top: 50px;
+    background: url(../images/quote-image.png) no-repeat top left; }
+
+#contact {
+  border-top: 1px solid #ccc;
+  padding-top: 30px; }
+  #contact h2 {
+    background-color: #51b105;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    width: 250px;
+    text-transform: uppercase;
+    position: relative;
+    top: -45px;
+    margin: 0 auto;
+    border-left: 16px solid #fff;
+    border-right: 16px solid #fff;
+    letter-spacing: 1px; }
+
+#contact-methods {
+  float: left; }
+  #contact-methods li {
+    color: #8c8b8b;
+    line-height: 30px;
+    clear: left; }
+  #contact-methods li:before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    background: url(../images/icones-images.png) no-repeat; }
+  #contact-methods li:nth-child(1):before {
+    background-position: -243px -15px; }
+  #contact-methods li:nth-child(2):before {
+    background-position: -201px -15px; }
+  #contact-methods li:nth-child(3):before {
+    background-position: -160px -15px; }
