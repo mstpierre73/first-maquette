@@ -122,7 +122,8 @@ header nav {
   position: relative;
   font-family: "Open Sans", sans-serif; }
   #lead-banner img {
-    width: 100%; }
+    width: 100%;
+    max-height: 450px; }
   #lead-banner .banner-overlay {
     position: absolute;
     top: 20%;
@@ -275,7 +276,22 @@ section:after {
   #contact-methods li:nth-child(2):before {
     background-position: -201px -15px; }
   #contact-methods li:nth-child(3):before {
+    position: relative;
+    top: -80px;
+    left: 250px;
     background-position: -160px -15px; }
+  #contact-methods span {
+    display: block;
+    position: relative;
+    top: -80px;
+    left: 250px; }
+  #contact-methods span:nth-child(3):before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 40px;
+    float: left;
+    margin-right: 10px; }
 
 #social-nav {
   clear: both;
@@ -299,3 +315,103 @@ section:after {
     display: block;
     width: 100%;
     height: 100%; }
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    max-width: 800px; }
+  #lead-banner {
+    max-height: 500px; }
+    #lead-banner img {
+      max-height: 500px; }
+    #lead-banner .banner-overlay {
+      width: 100%;
+      top: 15%; }
+    #lead-banner .banner-title {
+      font-size: 54px; }
+    #lead-banner p {
+      font-size: 24px; } }
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: 450px; }
+  #logo {
+    margin: 0 auto;
+    float: none; }
+  header nav {
+    width: 100%;
+    float: none;
+    margin: 0 auto; }
+    header nav li {
+      padding-bottom: 15px; }
+  header ul {
+    margin: 15px 0; }
+  #lead-banner .wrapper {
+    width: 400px; }
+  #lead-banner .banner-title {
+    font-size: 35px;
+    text-align: center; }
+  #lead-banner p {
+    font-size: 18px;
+    max-width: 100%;
+    line-height: 1em;
+    text-align: center; }
+  #lead-banner a {
+    margin: 15px auto;
+    font-size: 14px;
+    padding: 10px 0; }
+  #points-of-sale li {
+    width: 100%;
+    margin: 0; }
+  #points-of-sale li:nth-child(2) {
+    margin: 0; }
+  #points-of-sale p {
+    margin: 0 10% 3%;
+    font-size: 16px; }
+  #clients img {
+    width: 40%; }
+  #clients blockquote {
+    padding-top: 40px;
+    line-height: 1.4em;
+    margin-top: 0;
+    width: 58%;
+    font-size: 14px; }
+  #contact img {
+    float: none;
+    margin: 15px auto 0; }
+  #contact #contact-methods {
+    float: none;
+    height: 100px; }
+  #social-nav {
+    top: 15px;
+    left: 115px; } }
+
+@media screen and (max-width: 600px) {
+  header ul {
+    margin: 0; }
+  header nav li {
+    float: none;
+    text-align: center; }
+  header nav span {
+    display: none; }
+  #lead-banner {
+    max-height: 600px; }
+    #lead-banner img {
+      height: 250px; }
+    #lead-banner p {
+      display: none; }
+    #lead-banner a {
+      margin: 20px auto; } }
+
+@media screen and (max-width: 300px) {
+  #lead-banner .wrapper {
+    width: 250px; }
+  #contact #contact-methods {
+    height: 200px; }
+    #contact #contact-methods li:nth-child(3):before {
+      top: 0;
+      left: 0; }
+    #contact #contact-methods span {
+      top: 0;
+      left: 0; }
+  #contact #social-nav {
+    left: 0; } }

@@ -86,6 +86,7 @@ header nav {
     font-family: $openSans;
     img {
         width: 100%;
+        max-height: 450px;
     }
     .banner-overlay {
         position: absolute;
@@ -231,8 +232,25 @@ section:after {
         background-position: -201px -15px;
     }
     li:nth-child(3):before {
+        position: relative;
+        top: -80px;
+        left: 250px;
         background-position: -160px -15px;
-    }     
+    }
+    span {
+        display: block;
+        position: relative;
+        top: -80px;
+        left: 250px;
+    }
+    span:nth-child(3):before {
+        content: "";
+        display: block;
+        width: 45px;
+        height: 40px;
+        float:  left;
+        margin-right: 10px;
+    }    
 }
 
 #social-nav {
@@ -263,4 +281,159 @@ section:after {
         width: 100%;
         height: 100%;
     }
+}
+
+@media screen and (max-width: 1100px){
+    .wrapper {
+        max-width: 800px;
+    }
+    #lead-banner {
+        max-height: 500px;
+        img {
+            max-height: 500px;
+        }
+        .banner-overlay {
+            width: 100%;
+            top: 15%;
+        }
+        .banner-title {
+            font-size: 54px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }  
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        max-width: 450px;
+    }
+    #logo {
+        margin: 0 auto;
+        float: none;
+    }
+    header {
+        nav {
+            width: 100%;
+            float: none;
+            margin: 0 auto;
+            li {
+                padding-bottom: 15px;
+            }
+        }
+        ul {
+            margin: 15px 0;
+        }
+    }
+    #lead-banner {
+        .wrapper {
+            width: 400px;
+        }
+        .banner-title {
+            font-size: 35px;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            max-width: 100%;
+            line-height: 1em;
+            text-align: center;
+        }
+        a {
+            margin: 15px auto;
+            font-size: 14px;
+            padding: 10px 0;
+        }
+    }
+    #points-of-sale {
+        li {
+        width: 100%;
+        margin: 0;
+        }
+        li:nth-child(2) {
+            margin: 0;
+        }  
+        p {
+            margin: 0 10% 3%;
+            font-size: 16px;
+        }  
+    }
+    #clients {
+        img {
+            width: 40%;
+        }
+        blockquote {
+            padding-top: 40px;
+            line-height: 1.4em;
+            margin-top: 0;
+            width: 58%;
+            font-size: 14px;
+        }
+    }
+    #contact {
+        img {
+            float: none;
+            margin: 15px auto 0;
+        }
+        #contact-methods {
+            float:none;
+            height: 100px;
+        }
+    }
+    #social-nav {
+        top: 15px;
+        left: 115px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        ul {
+            margin: 0;
+        }
+        nav li {
+            float: none;
+            text-align: center;
+        }
+        nav span {
+            display: none;
+        }
+    }
+    #lead-banner {
+        max-height: 600px;
+        img {
+            height: 250px;
+        }
+        p {
+            display: none;
+        }
+        a {
+            margin: 20px auto;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #lead-banner {
+        .wrapper {
+            width: 250px;
+        }
+    }
+    #contact {
+        #contact-methods {
+            height: 200px;
+            li:nth-child(3):before {
+                top: 0;
+                left:0;
+            }
+            span {
+                top: 0;
+                left: 0;
+            }
+        }
+        #social-nav {
+            left: 0;
+        }
+    }  
 }
